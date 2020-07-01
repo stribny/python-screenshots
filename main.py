@@ -34,7 +34,6 @@ def cli():
 @click.option('--filename', default='screenshot.png')
 @click.option('--resized_filename', default='screenshot_resized.png')
 def screenshot(url, viewport_width, viewport_height, width, height, filename, resized_filename):
-    print(url)
     click.echo("Capturing screenshot...")
     original_path = Path(filename)
     resized_path = Path(resized_filename)
